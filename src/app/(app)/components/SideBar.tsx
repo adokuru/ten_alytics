@@ -58,13 +58,13 @@ export default function Sidebar({ children }: SidebarProps) {
       <MobileSiderBar children={children} expanded={true} />
       <div
         className={cn(
-          "rounded-2xl bg-white h-full hidden md:block",
+          "rounded-2xl bg-white dark:bg-black border dark:border-stone-700 h-full hidden md:block",
           expanded ? "w-[268px]" : ""
         )}
       >
         <div
           className={cn(
-            "flex  items-center pt-5 pb-4 pr-4 border-b",
+            "flex  items-center pt-5 pb-4 pr-4 border-b dark:border-stone-700",
             expanded ? "justify-between" : "px-4 justify-start"
           )}
         >
@@ -105,9 +105,11 @@ function MobileSiderBar({
     <nav className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant={"ghost"} size={"icon"} className="absolute">
-            <MenuIcon />
-          </Button>
+          <div className="absolute top-0 left-2 h-16 flex items-center">
+            <Button variant={"ghost"} size={"icon"}>
+              <MenuIcon />
+            </Button>
+          </div>
         </SheetTrigger>
         <SheetOverlay className="md:hidden">
           <SheetContent side={"left"} className="p-0 py-4 md:hidden h-full">
