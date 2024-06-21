@@ -1,20 +1,18 @@
 "use client";
-import { Home, Settings, User } from "lucide-react";
 import Sidebar, { SidebarItem } from "./components/SideBar";
+import { Icons } from "@/components/ui/icons";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative bg-white dark:bg-slate-900  lg:w-screen lg:h-screen pattern">
-      <div className="flex">
+    <div className="relative bg-[#FBFDFF] dark:bg-slate-900 px-4 md:px-5 lg:px-6 md:w-screen md:h-screen">
+      <div className="flex md:gap-4">
         <Sidebar>
-          <SidebarItem icon={<Home />} text="Home" active />
-          <SidebarItem icon={<User />} text="Profile" />
-          <SidebarItem icon={<Settings />} text="Settings" alert />
+          <SidebarItem icon={<Icons.dashboard />} text="Dashboard" active />
+          <SidebarItem icon={<Icons.wallet />} text="Learning Management" />
+          <SidebarItem icon={<Icons.qrCode />} text="Lesson Videos" />
         </Sidebar>
 
-        <main className="flex-1 p-4 ml-40">
-          <div className="mb-16 lg:mb-[unset]">{children}</div>
-        </main>
+        <main className="flex-1 my-5">{children}</main>
       </div>
     </div>
   );
