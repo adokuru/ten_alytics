@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function CoursesCards() {
+export default function CoursesCount() {
   return (
-    <div className="px-6 md:px-0 mt-6 flex flex-col gap-4 md:flex-row">
+    <div className="mt-6 flex flex-col gap-4 md:flex-row">
       <Card className="rounded-2xl overflow-hidden w-full">
         <CardHeader className="bg-orange-50 dark:bg-orange-950">
           <CardTitle className="text-gray-900 dark:text-neutral-50 text-lg font-bold">

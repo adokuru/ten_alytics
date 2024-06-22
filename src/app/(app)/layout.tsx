@@ -2,7 +2,6 @@
 import Sidebar, { SidebarItem } from "./components/SideBar";
 import { Icons } from "@/components/ui/icons";
 import TopBar from "./components/TopBar";
-import WelcomeBanner from "./components/WelcomeBanner";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,7 +15,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <main className="flex-1">
           <TopBar />
-          <WelcomeBanner />
           {children}
         </main>
       </div>

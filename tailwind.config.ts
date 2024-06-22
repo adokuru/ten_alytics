@@ -21,6 +21,7 @@ const config = {
       colors: {
         pri: "#DA6728",
         sec: "#FFFBFA",
+        "sec-dark": "#2C1508",
       },
       keyframes: {
         "accordion-down": {
