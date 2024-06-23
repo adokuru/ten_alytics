@@ -5,8 +5,8 @@ import TopBar from "./components/TopBar";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative bg-[#FBFDFF] dark:bg-slate-900 md:px-5 lg:px-6 md:w-screen md:h-screen">
-      <div className="flex md:gap-4">
+    <div className="relative bg-[#FBFDFF] dark:bg-slate-900 md:px-4 xl:px-6 md:h-screen">
+      <div className="flex lg:gap-4">
         <Sidebar>
           <SidebarItem icon={<Icons.dashboard />} text="Dashboard" active />
           <SidebarItem icon={<Icons.wallet />} text="Learning Management" />

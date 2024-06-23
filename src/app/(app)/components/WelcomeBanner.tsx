@@ -7,7 +7,7 @@ import {
 import { Button } from "@/components/ui/button";
 export default function WelcomeBanner() {
   return (
-    <Card className="rounded-2xl">
+    <Card className="rounded-2xl lg:col-span-3">
       <CardContent className="pt-6 flex flex-col gap-3 lg:flex-row lg:justify-between lg:items-center">
         <div className="flex flex-col gap-3">
           <CardDescription className="max-w-lg text-balance leading-relaxed">

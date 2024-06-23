@@ -5,15 +5,15 @@ import RecommendedCourses from "./components/RecommendedCourses";
 
 export default function DashboardPage() {
   return (
-    <div className="pt-4 px-5">
+    <div className="pt-4 md:pt-0 px-5 gap-y-6 lg:gap-x-5 md:px-0 grid lg:grid-cols-3">
       <WelcomeBanner />
-      <div>
+
+      <div className="lg:col-span-2">
         <CoursesCount />
         <RecommendedCourses />
       </div>
-      <div className="mt-4">
-        <DashboardSidebar />
-      </div>
+
+      <DashboardSidebar />
     </div>
   );
 }

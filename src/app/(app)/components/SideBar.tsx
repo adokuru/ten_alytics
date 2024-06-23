@@ -58,7 +58,7 @@ export default function Sidebar({ children }: SidebarProps) {
       <MobileSiderBar children={children} expanded={true} />
       <div
         className={cn(
-          "rounded-2xl bg-white dark:bg-black border dark:border-stone-700 h-full hidden md:block",
+          "rounded-2xl bg-white dark:bg-black border dark:border-stone-700 h-full hidden lg:block",
           expanded ? "w-[268px]" : ""
         )}
       >
@@ -102,17 +102,17 @@ function MobileSiderBar({
   children: ReactNode;
 }) {
   return (
-    <nav className="md:hidden">
+    <nav className="lg:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <div className="absolute top-0 left-2 h-16 flex items-center">
+          <div className="absolute top-0 left-2 md:left-7 md:top-5 h-16 flex items-center">
             <Button variant={"ghost"} size={"icon"}>
               <MenuIcon />
             </Button>
           </div>
         </SheetTrigger>
-        <SheetOverlay className="md:hidden">
-          <SheetContent side={"left"} className="p-0 py-4 md:hidden h-full">
+        <SheetOverlay className="lg:hidden">
+          <SheetContent side={"left"} className="p-0 py-4 lg:hidden h-full">
             <SheetHeader className="border-b pb-4">
               <SheetTitle></SheetTitle>
               <SheetDescription></SheetDescription>
