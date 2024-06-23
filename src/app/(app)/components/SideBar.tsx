@@ -53,12 +53,12 @@ export default function Sidebar({ children }: SidebarProps) {
   return (
     <aside
       // className={cn("h-screen fixed top-0 left-0 z-50 w-full bg-g")}
-      className="h-screen min-h-[600px] my-5"
+      className="h-screen min-h-[600px] my-5 "
     >
       <MobileSiderBar children={children} expanded={true} />
       <div
         className={cn(
-          "rounded-2xl bg-white dark:bg-black border dark:border-stone-700 h-full hidden lg:block",
+          "rounded-2xl bg-white dark:bg-black border dark:border-stone-700 h-full hidden lg:flex lg:flex-col",
           expanded ? "w-[268px]" : ""
         )}
       >

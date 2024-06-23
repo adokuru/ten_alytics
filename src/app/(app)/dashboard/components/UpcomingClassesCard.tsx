@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icons } from "@/components/ui/icons";
 
-export default function UpcomingClassesCard() {
+export default function UpcomingClassesCard({ newUser }: { newUser: boolean }) {
   return (
     <Card className="rounded-2xl">
       <CardContent className="p-4">
@@ -12,7 +12,7 @@ export default function UpcomingClassesCard() {
             </CardTitle>
           </CardHeader>
           <CardContent className="py-4 ">
-            <EmptyState />
+            {newUser ? <EmptyState /> : <Content />}
           </CardContent>
         </Card>
       </CardContent>
@@ -31,6 +31,24 @@ function EmptyState() {
         Enroll in an interactive learning environment led by professional
         instructors to receive live links.
       </p>
+    </div>
+  );
+}
+
+function Content() {
+  return (
+    <div className="border-l-4 border-pri rounded-xl p-4 flex flex-col gap-2">
+      <p className="font-bold text-lg">Introduction to Cybersecurity</p>
+      <p className=" text-neutral-500 dark:text-neutral-400">
+        Class live link:
+      </p>
+      <a
+        href="#"
+        target="_blank"
+        className="font-bold text-pri hover:underline underline-offset-2"
+      >
+        https://meet.google.com/xab-pvxs-ysc
+      </a>
     </div>
   );
 }
