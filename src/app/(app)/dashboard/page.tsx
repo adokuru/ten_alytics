@@ -1,7 +1,9 @@
 import WelcomeBanner from "../components/WelcomeBanner";
 import CoursesCount from "./components/CoursesCount";
 import DashboardSidebar from "./components/DashboardSideBar";
+import EnrolledCourses from "./components/EnrolledCourses";
 import RecommendedCourses from "./components/RecommendedCourses";
+import YourProgress from "./components/YourProgress";
 
 export default function DashboardPage() {
   return (
@@ -31,6 +33,8 @@ function ExistingUser() {
     <>
       <div className="lg:col-span-2">
         <CoursesCount />
+        <EnrolledCourses />
+        <YourProgress />
         <RecommendedCourses />
       </div>
       <DashboardSidebar newUser={false} />

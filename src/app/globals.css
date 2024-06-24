@@ -9,3 +9,11 @@
 .btn-secondary {
   @apply !bg-sec dark:!bg-sec-dark text-pri dark:!text-pri shadow-sm hover:bg-sec hover:dark:bg-sec-dark hover:opacity-85;
 }
+
+.streak-count {
+  -webkit-text-stroke: 3px #daa305; /* Border width and color */
+}
+/* .streak-count {
+  text-shadow: -2px -2px 0 #daa305, 2px -2px 0 #daa305, -2px 2px 0 #daa305,
+    2px 2px 0 #daa305;
+} */

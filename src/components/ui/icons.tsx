@@ -273,6 +273,113 @@ export const Icons = {
       />
     </svg>
   ),
+  eclipseBg: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={283}
+      height={127}
+      fill="none"
+      {...props}
+    >
+      <mask
+        id="b"
+        width={283}
+        height={283}
+        x={0}
+        y={-156}
+        maskUnits="userSpaceOnUse"
+        style={{
+          maskType: "alpha",
+        }}
+      >
+        <circle
+          cx={141.5}
+          cy={-14.5}
+          r={141.5}
+          fill="#F5CB36"
+          fillOpacity={0.2}
+        />
+        <circle
+          cx={141.5}
+          cy={-14.5}
+          r={141}
+          stroke="url(#a)"
+          strokeOpacity={0.2}
+        />
+      </mask>
+      <g mask="url(#b)">
+        <path
+          fill="#F5CB36"
+          fillOpacity={0.2}
+          d="M124.75-134.75v240h-240v-240h240Z"
+        />
+        <path
+          stroke="url(#c)"
+          strokeOpacity={0.2}
+          strokeWidth={0.5}
+          d="M4.75-156v283M-137-14.75h283M52.75-156v283M-137-62.75h283M100.75-156v283M-137-110.75h283M-19.25-156v283M-137 9.25h283M28.75-156v283M-137-38.75h283M76.75-156v283M-137-86.75h283M124.75-156v283M-137-134.75h283M-43.25-156v283M-137 33.25h283M-67.25-156v283M-137 57.25h283M-91.25-156v283M-137 81.25h283M-115.25-156v283M-137 105.25h283"
+        />
+      </g>
+      <defs>
+        <linearGradient
+          id="a"
+          x1={41.687}
+          x2={382.513}
+          y1={-270.773}
+          y2={-146.981}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.052} stopColor="#F1F1BC" />
+          <stop offset={0.492} stopColor="#E4BD34" />
+          <stop offset={0.942} stopColor="#DAA305" />
+        </linearGradient>
+        <linearGradient
+          id="c"
+          x1={-95.313}
+          x2={245.513}
+          y1={-270.773}
+          y2={-146.981}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.052} stopColor="#F1F1BC" />
+          <stop offset={0.492} stopColor="#E4BD34" />
+          <stop offset={0.942} stopColor="#DAA305" />
+        </linearGradient>
+      </defs>
+    </svg>
+  ),
+  dateChecked: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={40}
+      height={40}
+      fill="none"
+      {...props}
+    >
+      <rect width={40} height={40} fill="url(#a)" rx={20} />
+      <path
+        stroke="#101828"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.786}
+        d="M15.001 21.786s1.071 0 2.5 2.5c0 0 3.97-6.548 7.5-7.857"
+      />
+      <defs>
+        <linearGradient
+          id="a"
+          x1={5.892}
+          x2={54.065}
+          y1={-16.222}
+          y2={1.275}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.052} stopColor="#F1F1BC" />
+          <stop offset={0.492} stopColor="#E4BD34" />
+          <stop offset={0.942} stopColor="#DAA305" />
+        </linearGradient>
+      </defs>
+    </svg>
+  ),
   cert: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
