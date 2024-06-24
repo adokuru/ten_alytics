@@ -569,9 +569,9 @@ export const Icons = {
           y2={4.628}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.052} stopColor="#05060f1e" />
-          <stop offset={0.492} stopColor="#05060f1e" />
-          <stop offset={0.942} stopColor="#05060f1e" />
+          <stop offset={0.052} stopColor="currentColor" />
+          <stop offset={0.492} stopColor="currentColor" />
+          <stop offset={0.942} stopColor="currentColor" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -581,9 +581,9 @@ export const Icons = {
           y2={-0.825}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.052} stopColor="#05060f1e" />
-          <stop offset={0.492} stopColor="#05060f1e" />
-          <stop offset={0.942} stopColor="#05060f1e" />
+          <stop offset={0.052} stopColor="currentColor" />
+          <stop offset={0.492} stopColor="currentColor" />
+          <stop offset={0.942} stopColor="currentColor" />
         </linearGradient>
       </defs>
     </svg>
@@ -641,9 +641,9 @@ export const Icons = {
           y2={-0.825}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.052} stopColor="#05060f1e" />
-          <stop offset={0.492} stopColor="#05060f1e" />
-          <stop offset={0.942} stopColor="#05060f1e" />
+          <stop offset={0.052} stopColor="currentColor" />
+          <stop offset={0.492} stopColor="currentColor" />
+          <stop offset={0.942} stopColor="currentColor" />
         </linearGradient>
       </defs>
     </svg>
@@ -706,6 +706,67 @@ export const Icons = {
           <stop offset={0.942} stopColor="#DA6728" />
         </linearGradient>
       </defs>
+    </svg>
+  ),
+  lock: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      fill="none"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillOpacity={0.32}
+        fillRule="evenodd"
+        d="M8 9V6a4 4 0 0 1 8 0v3h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h1Zm6-3v3h-4V6a2 2 0 1 1 4 0Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  ),
+  circleCheck: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={22}
+      height={22}
+      fill="none"
+      {...props}
+    >
+      <rect
+        width={22}
+        height={22}
+        fill="currentColor"
+        fillOpacity={0.16}
+        rx={11}
+      />
+      <path
+        fill="#fff"
+        fillRule="evenodd"
+        d="M17.153 6.884c.432.453.416 1.17-.037 1.603l-7.334 7a1.134 1.134 0 0 1-1.62-.058l-3.334-3.666a1.134 1.134 0 0 1 1.676-1.525l2.552 2.808 6.494-6.199a1.134 1.134 0 0 1 1.603.037Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  ),
+  doubleTick: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      fill="none"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M7.326 18.092c-.327.275-.61.41-.906.408-.68-.007-1.247-.703-2.38-2.094l-1.515-1.86c-.624-.766-.7-1.907-.185-2.768.588-.983 1.717-1.258 2.596-.765M10.922 8.5a51.659 51.659 0 0 1 2.556-2.513A1.771 1.771 0 0 1 15 5.527"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M14.106 16.311c2.26-2.62 4.441-4.396 7.182-6.913.82-.753.947-2.073.303-3.009-.684-.994-1.983-1.193-2.863-.402-2.51 2.255-4.463 4.427-6.315 6.748-.098.122-.146.183-.197.217a.368.368 0 0 1-.416.003c-.051-.034-.1-.094-.197-.213l-.987-1.21c-.9-1.106-2.516-.983-3.268.246-.527.861-.449 2.002.189 2.768l1.548 1.86c1.157 1.391 1.736 2.087 2.431 2.094.695.007 1.327-.725 2.59-2.189Z"
+      />
     </svg>
   ),
 };

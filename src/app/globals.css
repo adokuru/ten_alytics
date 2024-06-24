@@ -33,3 +33,7 @@
 .hide-scrollbar {
   overflow: scroll; /* or auto if necessary */
 }
+
+.grid-auto-rows {
+  grid-auto-rows: auto; /* Rows adjust automatically based on content */
+}
