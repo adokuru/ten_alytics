@@ -53,7 +53,7 @@ export default function Sidebar({ children }: SidebarProps) {
   return (
     <aside
       // className={cn("h-screen fixed top-0 left-0 z-50 w-full bg-g")}
-      className="h-screen min-h-[600px] my-5 "
+      className="h-[calc(100vh-2.5rem)] min-h-[500px] my-5"
     >
       <MobileSiderBar children={children} expanded={true} />
       <div
@@ -112,18 +112,21 @@ function MobileSiderBar({
           </div>
         </SheetTrigger>
         <SheetOverlay className="lg:hidden">
-          <SheetContent side={"left"} className="p-0 py-4 lg:hidden h-full">
+          <SheetContent
+            side={"left"}
+            className="p-0 py-4 lg:hidden h-full flex flex-col"
+          >
             <SheetHeader className="border-b pb-4">
               <SheetTitle></SheetTitle>
               <SheetDescription></SheetDescription>
               <Alytics />
             </SheetHeader>
             <SidebarContext.Provider value={{ expanded }}>
-              <ul className="flex-1 flex flex-col gap-4 px-4 pt-4">
+              <ul className="flex-1 flex flex-col gap-4 px-4 pt-4 h-full">
                 {children}
               </ul>
             </SidebarContext.Provider>
-            <SheetFooter>
+            <SheetFooter className="w-full sm:flex-col">
               <div className="border-t py-4 leading-4 text-center text-xs text-gray-600">
                 © 2024
                 <span className={cn(expanded ? "" : "block")}> 10alytics</span>
@@ -161,11 +164,19 @@ export function SidebarItem({ icon, text, active, alert }: SidebarItemProps) {
         relative flex items-center py-2 px-3
         font-semibold rounded-md cursor-pointer
         transition-colors group  hover:text-pri
-        ${active ? "bg-sec text-pri font-bold" : "text-gray-700"}
+        ${
+          active
+            ? "bg-sec text-pri font-bold dark:bg-sec-dark"
+            : "text-neutral-500 dark:text-neutral-400"
+        }
     `}
         href={"/dashboard"}
       >
-        <span className={!active ? "text-black" : ""}>{icon}</span>
+        <span
+          className={!active ? "text-neutral-900 dark:text-neutral-400" : ""}
+        >
+          {icon}
+        </span>
         <span
           className={`overflow-hidden transition-all ${
             expanded ? "w-48 ml-3" : "w-0 ml-0"

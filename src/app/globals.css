@@ -17,3 +17,19 @@
   text-shadow: -2px -2px 0 #daa305, 2px -2px 0 #daa305, -2px 2px 0 #daa305,
     2px 2px 0 #daa305;
 } */
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: Ensure content is still scrollable */
+.hide-scrollbar {
+  overflow: scroll; /* or auto if necessary */
+}
