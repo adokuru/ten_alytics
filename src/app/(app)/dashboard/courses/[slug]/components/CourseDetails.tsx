@@ -55,7 +55,7 @@ export default function CourseDetails() {
               </div>
             </div>
             <div className="text-sm text-neutral-500 dark:text-neutral-400 flex gap-3 items-center">
-              <div className="flex flex-row-reverse items-center [&>*]:-ml-2 [&>*]:border">
+              <div className="flex flex-row-reverse items-center ml-2 [&>*]:-ml-2 [&>*]:border">
                 <Avatar className="rounded-md">
                   <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>CN</AvatarFallback>
