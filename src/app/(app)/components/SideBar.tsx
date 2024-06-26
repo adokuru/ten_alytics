@@ -24,6 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useToggleNav } from "./ToggleNav";
 
 interface SidebarContextProps {
   expanded: boolean;
@@ -42,13 +43,13 @@ export default function Sidebar({ children }: SidebarProps) {
 
   const pathname = usePathname();
   const isDashboard = pathname === "/dashboard";
-  // useEffect(() => {
-  //   if (isDashboard) {
-  //     setExpanded(false);
-  //     return;
-  //   }
-  //   setExpanded(true);
-  // }, [isDashboard]);
+  useEffect(() => {
+    if (isDashboard) {
+      setExpanded(false);
+      return;
+    }
+    setExpanded(true);
+  }, [isDashboard]);
 
   return (
     <aside
@@ -101,16 +102,17 @@ function MobileSiderBar({
   expanded: boolean;
   children: ReactNode;
 }) {
+  const { isCollapsed, toggleIsCollaped } = useToggleNav();
   return (
     <nav className="lg:hidden">
-      <Sheet>
-        <SheetTrigger asChild>
+      <Sheet open={isCollapsed} onOpenChange={toggleIsCollaped}>
+        {/* <SheetTrigger asChild>
           <div className="absolute top-0 left-2 md:left-7 md:top-5 h-16 flex items-center">
             <Button variant={"ghost"} size={"icon"}>
               <MenuIcon />
             </Button>
           </div>
-        </SheetTrigger>
+        </SheetTrigger> */}
         <SheetOverlay className="lg:hidden">
           <SheetContent
             side={"left"}

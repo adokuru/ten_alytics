@@ -54,10 +54,10 @@ export default function CourseDetails() {
                 <PlayIcon size={16} /> <span>Experience</span>
               </div>
             </div>
-            <div className='text-sm text-neutral-500 dark:text-neutral-400 flex gap-3 items-center'>
-              <div className='flex flex-row-reverse items-center [&>*]:-ml-2 [&>*]:border'>
-                <Avatar className='rounded-md'>
-                  <AvatarImage src='https://github.com/shadcn.png' />
+            <div className="text-sm text-neutral-500 dark:text-neutral-400 flex gap-3 items-center">
+              <div className="flex flex-row-reverse items-center ml-2 [&>*]:-ml-2 [&>*]:border">
+                <Avatar className="rounded-md">
+                  <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
                 <Avatar className='rounded-md'>

@@ -5,6 +5,7 @@ import {
   ChevronDownIcon,
   ChevronRightCircleIcon,
   LoaderCircleIcon,
+  MenuIcon,
   SunIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,13 +20,23 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useToggleNav } from "./ToggleNav";
 
 export default function TopBar() {
+  const { toggleIsCollaped } = useToggleNav();
   return (
     <>
-      <header className="flex h-16 items-center gap-4 border-b md:border md:rounded-2xl pl-14 pr-4 lg:pl-5 md:pr-5 bg-white md:my-5 justify-between shadow-sm dark:border-neutral-800 dark:bg-neutral-950">
+      <header className="flex h-16 items-center gap-4 border-b md:border md:rounded-2xl pl-4 pr-4 lg:pl-5 md:pr-5 bg-white md:my-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-950">
+        <Button
+          variant={"ghost"}
+          size={"icon"}
+          className="lg:hidden"
+          onClick={() => toggleIsCollaped && toggleIsCollaped(true)}
+        >
+          <MenuIcon />
+        </Button>
         <h2 className="text-xl md:text-2xl font-medium">Dashboard</h2>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ml-auto">
           <ToggleTheme />
           <Notifications />
           <UserProfile />
