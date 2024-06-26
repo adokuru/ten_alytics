@@ -7,11 +7,11 @@ import YourProgress from "./components/YourProgress";
 
 export default function DashboardPage() {
   return (
-    <div className="pt-4 md:pt-0 px-5 gap-y-6 lg:gap-x-5 md:px-0 grid lg:grid-cols-3">
+    <div className='pt-4 md:pt-0 px-5 gap-y-6 lg:gap-x-5 md:px-0 grid lg:grid-cols-3'>
       <WelcomeBanner />
 
-      <ExistingUser />
-      {/* <NewUser /> */}
+      {/* <ExistingUser /> */}
+      <NewUser />
     </div>
   );
 }
@@ -19,7 +19,7 @@ export default function DashboardPage() {
 function NewUser() {
   return (
     <>
-      <div className="lg:col-span-2">
+      <div className='lg:col-span-2'>
         <CoursesCount />
         <RecommendedCourses />
       </div>
@@ -31,7 +31,7 @@ function NewUser() {
 function ExistingUser() {
   return (
     <>
-      <div className="lg:col-span-2">
+      <div className='lg:col-span-2'>
         <CoursesCount />
         <EnrolledCourses />
         <YourProgress />
