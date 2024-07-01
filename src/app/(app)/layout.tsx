@@ -14,13 +14,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <ToggleNavProvider>
         <div className='flex h-full lg:gap-4'>
           <Sidebar>
-            <SidebarItem icon={<Icons.dashboard />} text='Dashboard' active />
-            <SidebarItem icon={<Icons.courses />} text='Courses' />
+            <SidebarItem
+              icon={<Icons.dashboard />}
+              text='Dashboard'
+              active={isDashboard}
+              href='/dashboard'
+            />
+            <SidebarItem
+              icon={<Icons.courses />}
+              text='Courses'
+              href='/courses'
+              active={pathname === "/courses"}
+            />
             <SidebarItem
               icon={<Icons.learningManagement />}
               text='Learning Management'
+              href='/learning-management'
+              active={pathname === "/learning-management"}
             />
-            <SidebarItem icon={<Icons.qrCode />} text='Lesson Videos' />
+            <SidebarItem
+              icon={<Icons.qrCode />}
+              text='Lesson Videos'
+              href='/lesson-videos'
+              active={pathname === "/lesson-videos"}
+            />
           </Sidebar>
 
           <main className='flex-1 h-full md:overflow-hidden md:overflow-y-auto hide-scrollbar pb-5'>
