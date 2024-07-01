@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <main className="flex-1 h-full md:overflow-hidden md:overflow-y-auto hide-scrollbar pb-5">
             <TopBar />
-            {children}
+            <div className="pt-4 md:pt-0 px-5 md:px-0">{children}</div>
           </main>
         </div>
       </ToggleNavProvider>
