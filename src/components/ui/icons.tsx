@@ -769,4 +769,314 @@ export const Icons = {
       />
     </svg>
   ),
+  courses: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={20}
+      height={22}
+      fill="none"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M13 13.969v1.406c0 2.652 0 3.977-.879 4.801C11.243 21 9.828 21 7 21c-2.828 0-4.243 0-5.121-.824C1 19.353 1 18.026 1 15.376v-4.822c0-2.652 0-3.978.879-4.802.582-.545 1.348-.696 2.121-.737"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M7 18h.009"
+      />
+      <path
+        fill="currentColor"
+        d="m9.388 1.159-.13.738.13-.738Zm2.556 9.387-.336.671.335-.67Zm-2.556-.805-.13.738.13-.738Zm7.224-8.582.13.738-.13-.738Zm-2.555 9.387.335.671-.335-.67Zm2.555-.805.13.738-.13-.738Zm-3.074-7.588C12.983 1.582 11.625.791 9.518.42l-.26 1.477c1.903.336 2.934 1.024 3.204 1.301l1.076-1.045Zm-1.26 7.722c-.683-.341-1.602-.67-2.76-.873l-.26 1.477c1.022.18 1.803.464 2.35.738l.67-1.342ZM6.25 3.248v4.005h1.5V3.248h-1.5Zm3.269 5.754c-.627-.11-1.043-.185-1.341-.267-.308-.084-.348-.143-.335-.129l-1.13.986c.29.333.694.487 1.067.59.382.105.882.192 1.478.297l.26-1.477ZM6.25 7.252c0 .492-.001.926.04 1.275.042.361.14.742.422 1.065l1.13-.986s-.008-.008-.02-.04a1 1 0 0 1-.042-.215c-.029-.24-.03-.57-.03-1.098h-1.5ZM9.519.42C9.036.335 8.582.252 8.196.25c-.43-.003-.846.092-1.23.396L7.9 1.82c.049-.04.103-.072.288-.071.23.001.538.053 1.071.147L9.518.42ZM7.75 3.248c0-.584.002-.927.044-1.172.034-.204.078-.234.105-.255L6.966.646c-.406.322-.578.741-.652 1.18-.066.399-.064.891-.064 1.422h1.5Zm5.788-.05c.27-.277 1.3-.965 3.204-1.3L16.482.42c-2.107.371-3.465 1.162-4.02 1.733l1.076 1.045Zm.854 8.02c.547-.275 1.328-.559 2.35-.739l-.26-1.477c-1.158.204-2.077.532-2.76.873l.67 1.342Zm3.858-7.97v4.005h1.5V3.248h-1.5Zm-1.508 7.231c.596-.105 1.096-.192 1.478-.297.373-.103.778-.257 1.068-.59l-1.13-.986c.012-.014-.028.045-.336.13-.298.081-.714.156-1.34.266l.26 1.477Zm1.508-3.226c0 .528-.001.858-.03 1.098a.995.995 0 0 1-.043.215c-.011.032-.019.04-.02.04l1.13.986c.282-.323.38-.704.423-1.065.041-.35.04-.783.04-1.274h-1.5Zm-1.508-5.356c.533-.094.841-.146 1.07-.147.186-.001.24.032.29.07l.932-1.174c-.383-.304-.8-.399-1.23-.396-.386.002-.84.085-1.322.17l.26 1.477Zm3.008 1.35c0-.53.003-1.022-.064-1.42-.074-.44-.247-.86-.652-1.181L18.1 1.82c.027.02.071.051.105.255.041.245.044.588.044 1.172h1.5Zm-8.142 7.97c.296.148.541.27.73.355.096.042.194.083.29.114.087.028.22.064.372.064v-1.5c.078 0 .117.017.088.008a1.548 1.548 0 0 1-.14-.057 19.48 19.48 0 0 1-.67-.326l-.67 1.342Zm2.113-1.342c-.31.155-.518.26-.67.326-.074.034-.117.05-.139.057-.03.01.01-.008.088-.008v1.5c.152 0 .285-.036.373-.065a2.95 2.95 0 0 0 .289-.113c.189-.084.434-.207.73-.355l-.67-1.342Zm-1.471-7.2V11h1.5V2.676h-1.5Z"
+      />
+    </svg>
+  ),
+  badge: (props: IconProps) => {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={29}
+        height={34}
+        fill="none"
+        {...props}
+      >
+        <path
+          fill="url(#a)"
+          fillRule="evenodd"
+          d="m10.13 11.57 8.18 4.723-9.531 16.509a.605.605 0 0 1-1.037.018L5.44 29.14l-4.338-.153A.605.605 0 0 1 .6 28.08l9.53-16.51Z"
+          clipRule="evenodd"
+        />
+        <mask
+          id="b"
+          width={19}
+          height={23}
+          x={0}
+          y={11}
+          maskUnits="userSpaceOnUse"
+          style={{
+            maskType: "luminance",
+          }}
+        >
+          <path
+            fill="#fff"
+            fillRule="evenodd"
+            d="m10.13 11.57 8.18 4.723-9.531 16.509a.605.605 0 0 1-1.037.018L5.44 29.14l-4.338-.153A.605.605 0 0 1 .6 28.08l9.53-16.51Z"
+            clipRule="evenodd"
+          />
+        </mask>
+        <g mask="url(#b)">
+          <path
+            fill="url(#c)"
+            fillRule="evenodd"
+            d="m7.456 20.93 4.09 2.361-5.313 9.202-4.09-2.361 5.313-9.202Z"
+            clipRule="evenodd"
+          />
+        </g>
+        <path
+          fill="url(#d)"
+          fillRule="evenodd"
+          d="m18.313 11.57-8.18 4.723 9.532 16.509a.605.605 0 0 0 1.037.018l2.301-3.68 4.338-.153a.605.605 0 0 0 .503-.907l-9.532-16.51Z"
+          clipRule="evenodd"
+        />
+        <mask
+          id="e"
+          width={18}
+          height={23}
+          x={10}
+          y={11}
+          maskUnits="userSpaceOnUse"
+          style={{
+            maskType: "luminance",
+          }}
+        >
+          <path
+            fill="#fff"
+            fillRule="evenodd"
+            d="m18.313 11.57-8.18 4.723 9.532 16.509a.605.605 0 0 0 1.037.018l2.301-3.68 4.338-.153a.605.605 0 0 0 .503-.907l-9.532-16.51Z"
+            clipRule="evenodd"
+          />
+        </mask>
+        <g mask="url(#e)">
+          <path
+            fill="url(#f)"
+            fillRule="evenodd"
+            d="m20.99 20.93-4.09 2.361 5.313 9.202 4.09-2.361-5.313-9.202Z"
+            clipRule="evenodd"
+          />
+        </g>
+        <path
+          fill="url(#g)"
+          fillOpacity={0.8}
+          fillRule="evenodd"
+          d="M13.014 1.054a2.42 2.42 0 0 1 2.42 0l9.337 5.39a2.42 2.42 0 0 1 1.21 2.096v10.782a2.42 2.42 0 0 1-1.21 2.096l-9.337 5.39a2.42 2.42 0 0 1-2.42 0l-9.338-5.39a2.42 2.42 0 0 1-1.21-2.096V8.54a2.42 2.42 0 0 1 1.21-2.096l9.338-5.39Z"
+          clipRule="evenodd"
+        />
+        <path
+          fill="#F8E1D4"
+          fillRule="evenodd"
+          d="M13.619 4.837a1.21 1.21 0 0 1 1.21 0l6.969 4.023c.374.216.605.616.605 1.048v8.047c0 .433-.23.832-.605 1.048l-6.97 4.024a1.21 1.21 0 0 1-1.21 0L6.65 19.003a1.21 1.21 0 0 1-.605-1.048V9.908c0-.432.23-.832.605-1.048l6.969-4.023Z"
+          clipRule="evenodd"
+        />
+        <path
+          fill="url(#h)"
+          fillRule="evenodd"
+          stroke="url(#i)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.21}
+          d="m14.223 17.119-2.291.814a.605.605 0 0 1-.808-.587l.067-2.43L9.71 12.99a.605.605 0 0 1 .308-.95l2.332-.687 1.374-2.005c.24-.35.758-.35.999 0l1.374 2.005 2.332.688c.408.12.568.612.309.95l-1.483 1.926.067 2.43a.605.605 0 0 1-.808.587l-2.29-.814Z"
+          clipRule="evenodd"
+        />
+        <defs>
+          <linearGradient
+            id="a"
+            x1={15.405}
+            x2={25.169}
+            y1={5.218}
+            y2={13.324}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#F1F1BC" />
+            <stop offset={0.492} stopColor="#E4BD34" />
+            <stop offset={0.942} stopColor="#DAA305" />
+          </linearGradient>
+          <linearGradient
+            id="c"
+            x1={10.213}
+            x2={15.14}
+            y1={17.546}
+            y2={21.56}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#FFB067" />
+            <stop offset={0.492} stopColor="#FF8C4D" />
+            <stop offset={0.942} stopColor="#DA6728" />
+          </linearGradient>
+          <linearGradient
+            id="d"
+            x1={13.038}
+            x2={3.274}
+            y1={5.218}
+            y2={13.324}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#F1F1BC" />
+            <stop offset={0.492} stopColor="#E4BD34" />
+            <stop offset={0.942} stopColor="#DAA305" />
+          </linearGradient>
+          <linearGradient
+            id="f"
+            x1={18.233}
+            x2={13.306}
+            y1={17.546}
+            y2={21.56}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#FFB067" />
+            <stop offset={0.492} stopColor="#FF8C4D" />
+            <stop offset={0.942} stopColor="#DA6728" />
+          </linearGradient>
+          <linearGradient
+            id="g"
+            x1={4.647}
+            x2={37.348}
+            y1={-10.657}
+            y2={1.22}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#FFB067" />
+            <stop offset={0.492} stopColor="#FF8C4D" />
+            <stop offset={0.942} stopColor="#DA6728" />
+          </linearGradient>
+          <linearGradient
+            id="h"
+            x1={10.475}
+            x2={23.271}
+            y1={4.31}
+            y2={8.957}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#FFB067" />
+            <stop offset={0.492} stopColor="#FF8C4D" />
+            <stop offset={0.942} stopColor="#DA6728" />
+          </linearGradient>
+          <linearGradient
+            id="i"
+            x1={10.475}
+            x2={23.271}
+            y1={4.31}
+            y2={8.957}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset={0.052} stopColor="#FFB067" />
+            <stop offset={0.492} stopColor="#FF8C4D" />
+            <stop offset={0.942} stopColor="#DA6728" />
+          </linearGradient>
+        </defs>
+      </svg>
+    );
+  },
+  badgeDisabled: (props: IconProps) => {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={29}
+        height={34}
+        fill="none"
+        {...props}
+      >
+        <path
+          fill="#E4E7EC"
+          fillRule="evenodd"
+          d="m10.255 11.57 8.179 4.723-9.531 16.509a.605.605 0 0 1-1.037.018l-2.302-3.68-4.338-.153a.605.605 0 0 1-.502-.907l9.53-16.51Z"
+          clipRule="evenodd"
+        />
+        <mask
+          id="a"
+          width={19}
+          height={23}
+          x={0}
+          y={11}
+          maskUnits="userSpaceOnUse"
+          style={{
+            maskType: "luminance",
+          }}
+        >
+          <path
+            fill="#fff"
+            fillRule="evenodd"
+            d="m10.255 11.57 8.179 4.723-9.531 16.509a.605.605 0 0 1-1.037.018l-2.302-3.68-4.338-.153a.605.605 0 0 1-.502-.907l9.53-16.51Z"
+            clipRule="evenodd"
+          />
+        </mask>
+        <g mask="url(#a)">
+          <path
+            fill="#D0D5DD"
+            fillRule="evenodd"
+            d="m7.58 20.93 4.09 2.361-5.313 9.202-4.09-2.361L7.58 20.93Z"
+            clipRule="evenodd"
+          />
+        </g>
+        <path
+          fill="#E4E7EC"
+          fillRule="evenodd"
+          d="m18.436 11.57-8.178 4.723 9.53 16.509a.605.605 0 0 0 1.038.018l2.301-3.68 4.338-.153a.605.605 0 0 0 .503-.907l-9.532-16.51Z"
+          clipRule="evenodd"
+        />
+        <mask
+          id="b"
+          width={19}
+          height={23}
+          x={10}
+          y={11}
+          maskUnits="userSpaceOnUse"
+          style={{
+            maskType: "luminance",
+          }}
+        >
+          <path
+            fill="#fff"
+            fillRule="evenodd"
+            d="m18.436 11.57-8.178 4.723 9.53 16.509a.605.605 0 0 0 1.038.018l2.301-3.68 4.338-.153a.605.605 0 0 0 .503-.907l-9.532-16.51Z"
+            clipRule="evenodd"
+          />
+        </mask>
+        <g mask="url(#b)">
+          <path
+            fill="#D0D5DD"
+            fillRule="evenodd"
+            d="m21.114 20.93-4.09 2.361 5.313 9.202 4.09-2.361-5.313-9.202Z"
+            clipRule="evenodd"
+          />
+        </g>
+        <path
+          fill="#D0D5DD"
+          fillRule="evenodd"
+          d="M13.138 1.054a2.42 2.42 0 0 1 2.42 0l9.337 5.39a2.42 2.42 0 0 1 1.21 2.096v10.782a2.42 2.42 0 0 1-1.21 2.096l-9.337 5.39a2.42 2.42 0 0 1-2.42 0L3.8 21.419a2.42 2.42 0 0 1-1.21-2.096V8.54A2.42 2.42 0 0 1 3.8 6.444l9.338-5.39Z"
+          clipRule="evenodd"
+        />
+        <path
+          fill="#E4E7EC"
+          fillRule="evenodd"
+          d="M13.743 4.837a1.21 1.21 0 0 1 1.21 0l6.969 4.023c.374.216.605.616.605 1.048v8.047c0 .433-.23.832-.605 1.048l-6.97 4.024a1.21 1.21 0 0 1-1.21 0l-6.968-4.024a1.21 1.21 0 0 1-.605-1.048V9.908c0-.432.23-.832.605-1.048l6.969-4.023Z"
+          clipRule="evenodd"
+        />
+        <path
+          fill="#E4E7EC"
+          fillRule="evenodd"
+          stroke="#F2F4F7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.21}
+          d="m14.347 17.119-2.291.814a.605.605 0 0 1-.808-.587l.067-2.43-1.482-1.927a.605.605 0 0 1 .308-.95l2.332-.687 1.375-2.005c.24-.35.757-.35.998 0l1.374 2.005 2.332.688c.408.12.568.612.309.95l-1.483 1.926.067 2.43a.605.605 0 0 1-.808.587l-2.29-.814Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    );
+  },
 };

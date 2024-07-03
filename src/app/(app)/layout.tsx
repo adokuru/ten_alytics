@@ -11,6 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex h-full lg:gap-4">
           <Sidebar>
             <SidebarItem icon={<Icons.dashboard />} text="Dashboard" active />
+            <SidebarItem icon={<Icons.courses />} text="Courses" />
             <SidebarItem icon={<Icons.wallet />} text="Learning Management" />
             <SidebarItem icon={<Icons.qrCode />} text="Lesson Videos" />
           </Sidebar>
