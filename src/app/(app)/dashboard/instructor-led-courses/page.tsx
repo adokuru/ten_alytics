@@ -5,6 +5,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import CourseCards from "./components/CourseCards";
+import FirstTimeModal from "./components/FirstTimeModal";
 
 export default function CoursesPage() {
   return (
@@ -27,6 +28,7 @@ export default function CoursesPage() {
           </div>
         </CardContent>
       </Card>
+      <FirstTimeModal />
     </>
   );
 }

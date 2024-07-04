@@ -90,7 +90,7 @@ function Courses() {
                 89 days 22 hrs 28 min 54 sec
               </span>
             </div>
-            <Button className="btn-primary !rounded-3xl w-fit" size={"sm"}>
+            <Button className="btn-primary !rounded-full w-fit" size={"sm"}>
               Continue learning
             </Button>
           </div>

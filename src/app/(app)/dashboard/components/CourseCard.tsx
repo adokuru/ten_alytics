@@ -69,7 +69,7 @@ export default function CourseCard() {
               Program fee payment can be in 2 instalments
             </p>
           </div>
-          <Button className="btn-primary">Preview course</Button>
+          <Button className="btn-primary !rounded-xl">Preview course</Button>
         </div>
       </CardContent>
     </Card>

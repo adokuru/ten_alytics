@@ -18,7 +18,9 @@ export default function WelcomeBanner() {
             Always stay updated in your student portal
           </CardDescription>
         </div>
-        <Button className="btn-primary sm:w-fit">Create a learning plan</Button>
+        <Button className="btn-primary !rounded-xl sm:w-fit">
+          Create a learning plan
+        </Button>
       </CardContent>
     </Card>
   );

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply !bg-pri dark:!bg-pri !rounded-xl hover:opacity-80 hover:bg-pri hover:dark:bg-pri dark:!text-neutral-50;
+  @apply !bg-pri dark:!bg-pri  hover:opacity-80 hover:bg-pri hover:dark:bg-pri dark:!text-neutral-50;
 }
 
 .btn-secondary {
